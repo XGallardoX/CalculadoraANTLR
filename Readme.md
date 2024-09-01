@@ -6,6 +6,17 @@ Jefferson Gutiérrez
 
 Este proyecto contiene una calculadora simple construida usando ANTLR para el análisis de expresiones matemáticas. La calculadora soporta operaciones básicas como suma, resta, multiplicación, división, potenciación y el cálculo del valor absoluto, además de poder ingresar numeros por archivos .txt y por consola.
 
+## Ejecución
+Esta se desarrollo y probó en Linux. 
+
+Para poder usar esta calculadora, debe tener instalado en su entorno de desarrollo ANTLR4, exactamente la version 4.13.2, con la que fue realizada esta misma, además debe tener instalado Java, en este caso la versión 21.0.3, y su respectivo compilador o maquina virtual, siendo requerida la versión openjdk 17 como mínimo.  
+
+Una vez descargados los 3 archivos, mas el caso de prueba; debe abrir su terminal en la carpeta que los contiene, y ejecutar el comando: "antlr4 -no-listener -visitor LabeledExpr.g4", este comando se utiliza para generar código fuente a partir de una gramática escrita en ANTLR, Después de ejecutar este comando, ANTLR generará varios archivos de salida, incluyendo:
+
+    Archivos de análisis léxico (LabeledExprLexer.java).
+    Archivos de análisis sintáctico (LabeledExprParser.java).
+    Archivos de visitante (LabeledExprBaseVisitor.java y LabeledExprVisitor.java).
+
 ## Casos de Prueba y Resultados Esperados
 
 A continuación se presentan varios casos de prueba junto con sus resultados esperados. Estos casos de prueba cubren una variedad de operaciones y escenarios, incluyendo números enteros y flotantes, así como la división por cero.
@@ -26,7 +37,7 @@ A continuación se presentan varios casos de prueba junto con sus resultados esp
 
 4. *Expresión:* 5 / 0  
    *Resultado esperado:* Error: División por cero  
-   *Descripción:* Intento de dividir un número entre cero. La calculadora debería manejar este caso y mostrar un mensaje de error.
+   *Descripción:* Intento de dividir un número entre cero.
 
 5. *Expresión:* 3 * 3  
    *Resultado esperado:* 9  
