@@ -56,8 +56,8 @@ A continuación se presentan varios casos de prueba junto con sus resultados esp
    *Descripción:* Potenciación de dos números enteros (3 elevado a la potencia 3).
 
 7. *Expresión:* abs(-3 + 7)  
-   *Resultado esperado:* 4  
-   *Descripción:* Cálculo del valor absoluto de la expresión -3 + 7, que resulta en 4.
+   *Resultado esperado:* 10  
+   *Descripción:* Cálculo del valor absoluto de la expresión -3 + 7, que resulta en 10.
 
 8. *Expresión:* 2.5 - 1.5  
    *Resultado esperado:* 1.0  
