@@ -1,6 +1,0 @@
-antlr4-no-listener-visitorLabeledExpr.g4 #-visitorisrequired!!!
-lsLabeledExpr*.java
-javacCalc.javaLabeledExpr*.java
-#de aca no pasa
-cat t.expr
-javaCalct.expr
