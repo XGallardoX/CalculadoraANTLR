@@ -17,6 +17,14 @@ Una vez descargados los 3 archivos, mas el caso de prueba; debe abrir su termina
     Archivos de análisis sintáctico (LabeledExprParser.java).
     Archivos de visitante (LabeledExprBaseVisitor.java y LabeledExprVisitor.java).
 
+-no-listener: Indica que no se deben generar las clases de listener. Los listeners permiten visitar nodos del árbol de análisis sintáctico basados en eventos, pero al usar esta opción, se evita su generación.
+-visitor: Indica que se deben generar las clases de visitante. Los visitantes permiten recorrer y procesar el árbol de análisis de manera más flexible y controlada.
+labeledexpr.g4: Es el archivo de gramática que define las reglas del lenguaje a analizar.
+
+Luego, se debe ejecutar el comando: "javac *.java", este comando compila todos los archivos Java generados, dando como resultado los .class permitiendo la ejecución de la calculadora.
+
+Finalmente, ejecutamos: "Java Calc" y podemos introducir cualquier expresión por consola, o, ejecutamos: "Java Calc prueba1.txt", que nos devuelve el resultado de la ejecución del txt como respuesta. 
+
 ## Casos de Prueba y Resultados Esperados
 
 A continuación se presentan varios casos de prueba junto con sus resultados esperados. Estos casos de prueba cubren una variedad de operaciones y escenarios, incluyendo números enteros y flotantes, así como la división por cero.
